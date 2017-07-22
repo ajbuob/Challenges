@@ -90,8 +90,6 @@ public final class AnagramUtil {
         String copyOfs1 = input1.replaceAll("\\s", "").toLowerCase();
         String copyOfs2 = input2.replaceAll("\\s", "").toLowerCase();
 
-        //Initially setting status as true
-
         boolean status = true;
 
         if (copyOfs1.length() != copyOfs2.length()) {
