@@ -1,7 +1,6 @@
-package com.abuob.challenges.amagram;
+package com.abuob.challenges.anagram;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -72,7 +71,7 @@ public final class AnagramUtil {
         StringBuilder sb = new StringBuilder(copyOfs2);
 
         for (char c : s1Array) {
-            int index = sb.indexOf("" + c);
+            int index = sb.indexOf(Character.toString(c));
 
             if (index != -1) {
                 //If present, removing that character from sb
@@ -99,7 +98,7 @@ public final class AnagramUtil {
             return false;
         }
 
-        Map<Character, Integer> map = new HashMap<Character, Integer>();
+        Map<Character, Integer> map = new HashMap<>();
 
 
         for (int i = 0; i < copyOfs1.length(); i++) {

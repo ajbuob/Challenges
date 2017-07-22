@@ -1,6 +1,5 @@
 package com.abuob.challenges.anagram;
 
-import com.abuob.challenges.amagram.AnagramUtil;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
