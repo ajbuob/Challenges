@@ -45,5 +45,4 @@ public class PangramUtilTest {
         final String OUTPUT = "abcdefghijklmnopqrstuvwxyz";
         assertThat(PangramUtil.getMissingLetters(INPUT)).isEqualTo(OUTPUT);
     }
-
 }

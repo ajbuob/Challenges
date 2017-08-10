@@ -23,7 +23,3 @@ public enum Direction {
         return abbreviation;
     }
 }
-
-
-
-
