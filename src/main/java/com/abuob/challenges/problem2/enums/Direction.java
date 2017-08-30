@@ -4,7 +4,7 @@ public enum Direction {
     LEFT('L'),
     RIGHT('R');
 
-    private char abbreviation;
+    private final char abbreviation;
 
     Direction(char abbreviation) {
         this.abbreviation = abbreviation;

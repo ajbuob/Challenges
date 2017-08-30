@@ -36,7 +36,7 @@ public final class Animator {
 
         while (true) {
             //Calculate the current position of all the particles at the given time
-            particlePositions = calculateParticlePostitionsAtTime(particles, time);
+            particlePositions = calculateParticlePositionsAtTime(particles, time);
             //Draw the current chamber and add it to the history
             chamberHistory.add(drawCurrentChamber(particlePositions, chamberSize));
 
@@ -76,10 +76,10 @@ public final class Animator {
      * Private utility method to calculate the current position of each particle at a given time.
      *
      * @param particles the list of particles which the current position will be calculated
-     * @param time      the time at which to calcualte the position of the particles
+     * @param time      the time at which to calculate the position of the particles
      * @return a list of integers containing the position of each particle
      */
-    private static List<Integer> calculateParticlePostitionsAtTime(List<Particle> particles, int time) {
+    private static List<Integer> calculateParticlePositionsAtTime(List<Particle> particles, int time) {
         List<Integer> positions = new ArrayList<>();
         for (Particle p : particles) {
             positions.add(p.getPositionOverTime(time));

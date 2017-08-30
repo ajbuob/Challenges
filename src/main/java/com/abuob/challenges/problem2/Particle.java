@@ -4,9 +4,9 @@ import com.abuob.challenges.problem2.enums.Direction;
 
 public class Particle {
 
-    private Direction direction;
-    private int initialPosition;
-    private int speed;
+    private final Direction direction;
+    private final int initialPosition;
+    private final int speed;
 
     public Particle(Direction direction, int initialPosition, int speed) {
         this.direction = direction;
