@@ -8,7 +8,7 @@ public class MathUtil {
     }
 
     public static double calculateAverageValue(Collection<Number> input) {
-        if (input == null || input.size() == 0)
+        if (input == null || input.isEmpty())
             throw new IllegalArgumentException("Input Collection must be have at least one element");
 
         int numElements = input.size();
