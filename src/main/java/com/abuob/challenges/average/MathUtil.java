@@ -2,7 +2,7 @@ package com.abuob.challenges.average;
 
 import java.util.Collection;
 
-public class MathUtil {
+public final class MathUtil {
 
     private MathUtil() {
     }

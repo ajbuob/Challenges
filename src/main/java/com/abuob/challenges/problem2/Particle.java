@@ -2,13 +2,13 @@ package com.abuob.challenges.problem2;
 
 import com.abuob.challenges.problem2.enums.Direction;
 
-public class Particle {
+public final class Particle {
 
     private final Direction direction;
     private final int initialPosition;
     private final int speed;
 
-    public Particle(Direction direction, int initialPosition, int speed) {
+    public Particle(final Direction direction, final int initialPosition, final int speed) {
         this.direction = direction;
         this.initialPosition = initialPosition;
         this.speed = speed;
