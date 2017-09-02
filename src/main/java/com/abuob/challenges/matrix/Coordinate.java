@@ -1,12 +1,12 @@
 package com.abuob.challenges.matrix;
 
-public class Coordinate {
+public final class Coordinate {
 
     private final int x;
 
     private final int y;
 
-    public Coordinate(int x, int y) {
+    public Coordinate(final int x, final int y) {
         this.x = x;
         this.y = y;
     }
