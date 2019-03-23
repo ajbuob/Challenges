@@ -2,6 +2,23 @@ package com.abuob.challenges.intervals;
 
 import java.util.*;
 
+/*-
+ * UncoveredIntervals.java
+ *
+ * Approach:
+ * Sort the input intervals according to their left coordinate.
+ *
+ * (TreeSet implements SortedSet with add and insert operations O(log n)
+ *
+ * Once sorted we compare the successive intervals (baseInterval and nextInterval)
+ * to see if there exists an uncovered interval between them.
+ *
+ * 3possible relationships between baseInterval and nextInterval:
+ * 1) nextInterval is fully contained in baseInterval
+ * 2) nextInterval intersects baseInterval
+ * 3) nextInterval is fully to the right of baseInterval (disjoint - we have found an uncovered interval)
+ *
+ */
 public class UncoveredIntervals {
 
     public static void main(String[] args) {
@@ -54,20 +71,20 @@ public class UncoveredIntervals {
 
             //Current is contained inside of the base - move to the next interval
             if (currentLeft <= baseRight && currentRight <= baseRight) {
-                System.out.println("contains - "+ currentInterval + " inside " + baseInterval);
+                //System.out.println("contains - "+ currentInterval + " inside " + baseInterval);
                 continue;
             }
 
             //overlap of intervals - update base to current
             if (currentLeft <= baseRight && currentRight > baseRight) {
-                System.out.println("overlap - baseInterval:" + baseInterval + " currentInterval:" + currentInterval);
+                //System.out.println("overlap - baseInterval:" + baseInterval + " currentInterval:" + currentInterval);
                 baseInterval = currentInterval;
                 continue;
             }
 
             //Add the uncovered interval to the result set
             if (currentLeft > baseRight) {
-                System.out.println("uncovered - between" + baseInterval + " and " + currentInterval);
+                //System.out.println("uncovered - between" + baseInterval + " and " + currentInterval);
                 uncoveredIntervals.add(new Interval(baseRight, currentLeft));
                 baseInterval = currentInterval;
             }
