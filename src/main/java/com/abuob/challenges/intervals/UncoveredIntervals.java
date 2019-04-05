@@ -13,7 +13,7 @@ import java.util.*;
  * Once sorted we compare the successive intervals (baseInterval and nextInterval)
  * to see if there exists an uncovered interval between them.
  *
- * 3possible relationships between baseInterval and nextInterval:
+ * 3 possible relationships between baseInterval and nextInterval:
  * 1) nextInterval is fully contained in baseInterval
  * 2) nextInterval intersects baseInterval
  * 3) nextInterval is fully to the right of baseInterval (disjoint - we have found an uncovered interval)
