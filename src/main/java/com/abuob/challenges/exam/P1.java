@@ -1,11 +1,11 @@
-package com.abuob.challenges.container;
+package com.abuob.challenges.exam;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-public class VowelReverse {
+public class P1 {
 
     private static Map<Character, String> VOWELS = new HashMap();
 

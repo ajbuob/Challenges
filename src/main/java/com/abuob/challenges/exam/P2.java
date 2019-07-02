@@ -1,10 +1,10 @@
-package com.abuob.challenges.container;
+package com.abuob.challenges.exam;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class MajorityElementOfArray {
+public class P2 {
 
     public static void main(String[] args) throws java.lang.Exception {
 
