@@ -66,11 +66,11 @@ public class P3 {
             return totalNumberOfPiles;
         }
         List<Integer> numbersToProcess = new ArrayList<>();
-        for(int num: inputList) {
+        for (int num : inputList) {
 
             //Individual pile is small enough to carry
-            if(num <= numberToCarry) {
-                totalNumberOfPiles ++;
+            if (num <= numberToCarry) {
+                totalNumberOfPiles++;
                 continue;
             }
 
@@ -78,13 +78,13 @@ public class P3 {
             int remainder = num % numberOfPiles;
 
             //Add the quotient the correct number of times
-            for(int i = 0 ; i<= numPerPile;i++) {
+            for (int i = 0; i <= numPerPile; i++) {
                 numbersToProcess.add(numberOfPiles);
             }
 
             //Check to see if the remainder can be carried or still needs to be further divided
-            if(remainder <= numberToCarry) {
-                totalNumberOfPiles ++;
+            if (remainder <= numberToCarry) {
+                totalNumberOfPiles++;
             } else {
                 numbersToProcess.add(remainder);
             }
