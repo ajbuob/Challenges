@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class MatrixUtil {
 
-    private MatrixUtil() {}
+    private MatrixUtil() {
+    }
 
     public static int findLengthLongestSequence(int[][] matrix) {
         int numInSequence = 1;

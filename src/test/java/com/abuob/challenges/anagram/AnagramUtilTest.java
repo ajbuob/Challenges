@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class AnagramUtilTest {
 
     @Test
-    public void isAnagramTest1(){
+    public void isAnagramTest1() {
         assertThat(AnagramUtil.isAnagram1("Mother In Law", "Hitler Woman")).isTrue();
         assertThat(AnagramUtil.isAnagram1("keEp", "peeK")).isTrue();
         assertThat(AnagramUtil.isAnagram1("SiLeNt CAT", "LisTen AcT")).isTrue();
@@ -20,7 +20,7 @@ public class AnagramUtilTest {
     }
 
     @Test
-    public void isAnagramTest2(){
+    public void isAnagramTest2() {
         assertThat(AnagramUtil.isAnagram2("Mother In Law", "Hitler Woman")).isTrue();
         assertThat(AnagramUtil.isAnagram2("keEp", "peeK")).isTrue();
         assertThat(AnagramUtil.isAnagram2("SiLeNt CAT", "LisTen AcT")).isTrue();
@@ -33,7 +33,7 @@ public class AnagramUtilTest {
     }
 
     @Test
-    public void isAnagramTest3(){
+    public void isAnagramTest3() {
         assertThat(AnagramUtil.isAnagram3("Mother In Law", "Hitler Woman")).isTrue();
         assertThat(AnagramUtil.isAnagram3("keEp", "peeK")).isTrue();
         assertThat(AnagramUtil.isAnagram3("SiLeNt CAT", "LisTen AcT")).isTrue();
@@ -46,7 +46,7 @@ public class AnagramUtilTest {
     }
 
     @Test
-    public void isAnagramTest4(){
+    public void isAnagramTest4() {
         assertThat(AnagramUtil.isAnagram4("Mother In Law", "Hitler Woman")).isTrue();
         assertThat(AnagramUtil.isAnagram4("keEp", "peeK")).isTrue();
         assertThat(AnagramUtil.isAnagram4("SiLeNt CAT", "LisTen AcT")).isTrue();

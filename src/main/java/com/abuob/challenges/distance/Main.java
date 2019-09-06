@@ -57,7 +57,7 @@ public class Main {
                 //Compute the distance on the valid input
                 double distance = distanceBetweenPoints(p1, p2);
                 //Typecast double to int as this is the expected output
-                System.out.println((int)distance);
+                System.out.println((int) distance);
 
             } else {
                 //Alert the user and continue to the next line of program input.
@@ -78,8 +78,8 @@ public class Main {
             return null;
         }
 
-        String pointStrClean = pointStr.replaceAll("[()]","");
-        String [] coordinates = pointStrClean.split(",");
+        String pointStrClean = pointStr.replaceAll("[()]", "");
+        String[] coordinates = pointStrClean.split(",");
 
         int xCoordinate = Integer.parseInt(coordinates[0]);
         int yCoordinate = Integer.parseInt(coordinates[1]);
