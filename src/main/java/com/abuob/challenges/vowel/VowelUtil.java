@@ -68,7 +68,7 @@ public class VowelUtil {
         Integer entryCount;
 
         //Display the remaining results to the user
-        for (int i = 0; i < entries.size(); i++) {
+        for (int i = 0; i < entriesSize; i++) {
             entry = entries.get(i);
 
             entryVowel = entry.getKey();
