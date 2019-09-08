@@ -18,6 +18,6 @@ public class ArrayUtilsTest {
     @Test
     public void getEquilibriumIndices() {
         assertThat(ArrayUtils.getEquilibriumIndices(new int[]{-1, 3, -4, 5, 1, -6, 2, 1}))
-                .isEqualTo(Lists.newArrayList(1,3,7));
+                .isEqualTo(Lists.newArrayList(1, 3, 7));
     }
 }
