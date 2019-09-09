@@ -49,11 +49,11 @@ public class VowelUtil {
                 Integer v1 = e1.getValue();
                 Integer v2 = e2.getValue();
 
-                //Numerical counts are the same, sort by the character ordering
+                //Numerical counts are the same, sort by the character ordering, in ascending order
                 if (v1.equals(v2)) {
                     return k1.compareTo(k2);
                 }
-                //Numerical counts different, sort by the number of each character
+                //Numerical counts different, sort by the number of each character, in descending order
                 return v2.compareTo(v1);
             }
         });
