@@ -33,7 +33,7 @@ public class CloudJumperTest {
     }
 
     @Test
-    public void jumpingOnClouds_ThreeJump_Mimimum() {
+    public void jumpingOnClouds_ThreeJump_Minimum() {
         assertThat(CloudJumper.jumpingOnClouds(new int[]{0, 1, 0, 0, 0, 1, 0})).isEqualTo(3);
     }
 }
