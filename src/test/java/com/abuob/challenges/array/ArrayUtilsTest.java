@@ -1,6 +1,5 @@
 package com.abuob.challenges.array;
 
-import com.abuob.challenges.arrray.ArrayUtils;
 import com.google.common.collect.Lists;
 import org.junit.Test;
 

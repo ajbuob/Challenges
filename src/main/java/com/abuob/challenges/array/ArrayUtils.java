@@ -1,4 +1,4 @@
-package com.abuob.challenges.arrray;
+package com.abuob.challenges.array;
 
 import java.util.*;
 
