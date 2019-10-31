@@ -1,6 +1,5 @@
-package vowel;
+package com.abuob.challenges.vowel;
 
-import com.abuob.challenges.vowel.VowelUtil;
 import org.junit.Test;
 
 public class VowelUtilTest {
@@ -19,7 +18,7 @@ public class VowelUtilTest {
 
     @Test
     public void test3() {
-        String s = VowelUtil.vowelsCountString("e should be the most common vowel in this sentence");
+        String s = VowelUtil.vowelsCountString("e should be the most common com.abuob.challenges.vowel in this sentence");
         System.out.println(s);
     }
 
