@@ -30,12 +30,12 @@ public class MissingInteger {
         int inputLength = A.length;
 
         Set<Integer> targetSet = Arrays.stream(A).boxed().collect(Collectors.toSet());
-        Set<Integer> filteredSet = targetSet.stream().filter( x -> x > 0).collect(Collectors.toSet());
+        Set<Integer> filteredSet = targetSet.stream().filter(x -> x > 0).collect(Collectors.toSet());
 
         System.out.println(targetSet);
         System.out.println(filteredSet);
 
-        if(filteredSet.isEmpty()) {
+        if (filteredSet.isEmpty()) {
             return 1;
         }
 
@@ -44,6 +44,6 @@ public class MissingInteger {
                 return i;
             }
         }
-        return Collections.max(targetSet) +1 ;
+        return Collections.max(targetSet) + 1;
     }
 }

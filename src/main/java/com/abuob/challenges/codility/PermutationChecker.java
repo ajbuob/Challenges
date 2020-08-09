@@ -60,10 +60,6 @@ public class PermutationChecker {
                         Collectors.counting()));
 
         int countSize = counts.size();
-
-        return inputMax == countSize ? 1: 0;
-
-
-
+        return inputMax == countSize ? 1 : 0;
     }
 }
