@@ -25,5 +25,4 @@ public class PermutationCheckerTest {
         int result = x.solution(input);
         assertThat(result).isEqualTo(1);
     }
-
 }

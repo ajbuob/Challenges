@@ -20,7 +20,7 @@ public class MissingIntegerTest {
     public void test2() {
 
         MissingInteger x = new MissingInteger();
-        int[] input = {1,3,6,4,1,2};
+        int[] input = {1, 3, 6, 4, 1, 2};
 
         int result = x.solution(input);
         assertThat(result).isEqualTo(5);
@@ -30,7 +30,7 @@ public class MissingIntegerTest {
     public void test3() {
 
         MissingInteger x = new MissingInteger();
-        int[] input = {-1,-3};
+        int[] input = {-1, -3};
 
         int result = x.solution(input);
         assertThat(result).isEqualTo(1);
