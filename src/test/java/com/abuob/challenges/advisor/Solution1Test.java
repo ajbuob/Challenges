@@ -19,7 +19,6 @@ public class Solution1Test {
         input.add(7);
         input.add(4);
 
-
         Integer result = Solution1.maxTrailing(input);
         assertThat(result).isEqualTo(4);
     }
