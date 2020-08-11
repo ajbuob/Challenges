@@ -1,4 +1,4 @@
-package com.abuob.challenges.advisor;
+package com.abuob.challenges.hackerrank;
 
 import org.junit.Test;
 
