@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Solution1 {
+public class MaxTrailing {
 
     public static int maxTrailing(List<Integer> levels) {
 

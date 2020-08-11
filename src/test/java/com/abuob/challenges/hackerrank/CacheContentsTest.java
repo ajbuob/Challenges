@@ -6,7 +6,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class Solution2Test {
+public class CacheContentsTest {
 
     @Test
     public void oneSecondInCache_noElements() {
@@ -14,7 +14,7 @@ public class Solution2Test {
         List<Integer> A = List.of(1, 1);
 
         List<List<Integer>> callLogs = List.of(A);
-        List<Integer> result = Solution2.cacheContents(callLogs);
+        List<Integer> result = CacheContents.cacheContents(callLogs);
 
         assertThat(result).isNotNull()
                 .hasSize(1)
@@ -30,7 +30,7 @@ public class Solution2Test {
         List<Integer> E = List.of(1, 1);
 
         List<List<Integer>> callLogs = List.of(A, B, C, D, E);
-        List<Integer> result = Solution2.cacheContents(callLogs);
+        List<Integer> result = CacheContents.cacheContents(callLogs);
 
         assertThat(result).isNotNull()
                 .hasSize(1)
@@ -49,7 +49,7 @@ public class Solution2Test {
 
 
         List<List<Integer>> callLogs = List.of(A, B, C, D, E, F, G);
-        List<Integer> result = Solution2.cacheContents(callLogs);
+        List<Integer> result = CacheContents.cacheContents(callLogs);
 
         assertThat(result).isNotNull()
                 .hasSize(1)
@@ -68,7 +68,7 @@ public class Solution2Test {
         List<Integer> H = List.of(2, 2);
 
         List<List<Integer>> callLogs = List.of(A, B, C, D, E, F, G, H);
-        List<Integer> result = Solution2.cacheContents(callLogs);
+        List<Integer> result = CacheContents.cacheContents(callLogs);
 
         assertThat(result).isNotNull()
                 .hasSize(1)
@@ -87,7 +87,7 @@ public class Solution2Test {
         List<Integer> H = List.of(3, 1);
 
         List<List<Integer>> callLogs = List.of(A, B, C, D, E, F, G, H);
-        List<Integer> result = Solution2.cacheContents(callLogs);
+        List<Integer> result = CacheContents.cacheContents(callLogs);
 
         assertThat(result).isNotNull()
                 .hasSize(1)

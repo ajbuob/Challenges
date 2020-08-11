@@ -7,7 +7,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class Solution1Test {
+public class MaxTrailingTest {
 
     @Test
     public void test1() {
@@ -19,7 +19,7 @@ public class Solution1Test {
         input.add(7);
         input.add(4);
 
-        Integer result = Solution1.maxTrailing(input);
+        Integer result = MaxTrailing.maxTrailing(input);
         assertThat(result).isEqualTo(4);
     }
 
@@ -32,7 +32,7 @@ public class Solution1Test {
         input.add(2);
         input.add(1);
 
-        Integer result =  Solution1.maxTrailing(input);
+        Integer result =  MaxTrailing.maxTrailing(input);
         assertThat(result).isEqualTo(-1);
     }
 
