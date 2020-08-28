@@ -11,6 +11,26 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class StreamCollectorExamples {
 
     @Test
+    public void array_stream_list() {
+
+        int integers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+
+        long longs[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+
+        List<Integer> integerList = Arrays.stream(integers).boxed().collect(Collectors.toList());
+
+        List<Long> longList = Arrays.stream(longs).boxed().collect(Collectors.toList());
+
+        assertThat(integerList).isNotNull();
+        assertThat(integerList).hasSize(20);
+
+        assertThat(longList).isNotNull();
+        assertThat(longList).hasSize(20);
+    }
+
+    @Test
     public void list_collect_list() {
 
         List<Integer> list = List.of();
